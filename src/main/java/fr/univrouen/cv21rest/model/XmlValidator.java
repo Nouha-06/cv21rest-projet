@@ -1,3 +1,4 @@
+package fr.univrouen.cv21rest.model;
 /*package fr.univrouen.cv21server.model;
 
 
