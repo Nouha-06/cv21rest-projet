@@ -1,4 +1,4 @@
-package fr.univrouen.cv21server.model;
+/*package fr.univrouen.cv21server.model;
 
 
 import org.xml.sax.SAXException;
@@ -31,3 +31,4 @@ public class XmlValidator {
         }
     }
 }
+*/
