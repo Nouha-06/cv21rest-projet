@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "b3033702-42a1-4d3f-af74-67901285e7d9",
+    "name": "cv21rest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /resume",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /insert",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>Mme.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Nouhaila</prenom>\r\n        <nom>Mellouki</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>B</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/insert",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["insert"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /cv?id=<id>",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/cv/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["cv", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /cv?id=<id>",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/delete/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["delete", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT /update?id=<id>",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "<cv>\r\n    <id>7</id>\r\n    <identite>\r\n        <genre>M.</genre>\r\n        <tel>0123456789</tel>\r\n        <prenom>Ali</prenom>\r\n        <nom>Benyoucef</nom>\r\n    </identite>\r\n    <prof>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n        <expe>\r\n          <titre>dev web</titre>\r\n        </expe>\r\n      </prof>\r\n    <divers>\r\n        <lv>\r\n            <cert>MAT</cert>\r\n            <nivs>A1</nivs>\r\n            <lang>EN</lang>\r\n            <nivi>50</nivi>\r\n        </lv>\r\n        <autre>\r\n            <titre>Permis de conduire</titre>\r\n            <comment>A</comment>\r\n        </autre>\r\n    </divers>\r\n    <objectif>\r\n        <statut>stage</statut>\r\n    </objectif>\r\n</cv>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/update/7",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["update", "7"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /help",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/resume",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8080",
+          "path": ["resume"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
